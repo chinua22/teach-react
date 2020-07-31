@@ -1,38 +1,522 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NAVIGATION STYLING */
+#NavPane {
+    display: flex;
+    color: #ffffff;
+    background-image: linear-gradient(
+        45deg,
+        rgb(72, 44, 191) 0%,
+        rgb(106, 198, 240) 100%
+    );
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+}
+.cover {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    height: 806px;
+    background-image: linear-gradient(
+        45deg,
+        rgb(72, 44, 191) 0%,
+        rgb(106, 198, 240),
+        100%
+    );
+}
+#NavPane img {
+    margin: 10px;
+    height: 45px;
+}
+nav ul {
+    /* list-style: none;s */
+    cursor: pointer;
+}
+nav ul li {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-left: 32px;
+    margin-top: 24px;
+    color: white;
+    list-style: none;
+}
+.nav-bar nav ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 12px;
+}
+.btn1 {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin: 10px;
+}
+.btn1:hover {
+    background-color: #fff;
+    color: rgb(72, 44, 191);
+    cursor: pointer;
+}
+/* NAVIGATION ENDS HERE */
+
+/* GRAT STYLING */
+#gratApplication,
+#gratApplication2 {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#grat {
+    background-color: #fcfc;
+    height: 0px;
+}
+.gratProgress {
+    color: green;
+    text-align: center;
+    margin: 70px;
+}
+#grat h3 {
+    font-size: 35px;
+    margin: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+.lorem {
+    line-height: 27px;
+    font-size: 20px;
+}
+#grat button {
+    border-radius: 25px;
+    height: 50px;
+    color: #fff;
+    background: rebeccapurple;
+    width: 200px;
+}
+.img2 {
+    position: absolute;
+    height: 650px;
+    padding: 50px;
+    border-radius: 70px;
+}
+/* GRAT STYLING ENDS */
+
+/* STYLYING START BEGINS */
+#secondPhase {
+    background-image: url(https://colorlib.com/preview/theme/appy/images/header-bg.jpg);
+    position: relative;
+    height: 750px;
+}
+#child {
+    height: inherit;
+    position: absolute;
+    background-color: rgb(89, 116, 236, 0.75);
+    width: 100%;
+}
+#secondPhase img {
+    margin: 40px;
+    width: 400px;
+    height: 700px;
+    margin-top: 150px;
+    padding: 60px;
+}
+.appy-app {
+    float: right;
+    padding: 60px;
+    margin-top: 150px;
+}
+.appy-app h1,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.appy-app h1 {
+    font-size: 60px;
+    font-weight: 300 !important;
+}
+.appy-app p {
+    line-height: 40px;
+    padding: 55px;
+}
+.appy-app button {
+    background-color: #fff;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    color: rgba(50, 150, 255, 0.5);
+}
+.appy-app button:hover {
+    cursor: pointer;
+    background-color: rgba(115, 32, 216, 0.5);
+    color: #fff;
+}
+/* STYLING START ENDS HERE */
+
+/* ABOUT STYLING STARTS */
+#about-appy {
+    position: relative;
+    text-align: center;
+    margin: 150px;
+}
+#about-appy img {
+    margin-left: 100px;
+}
+#about-appy h2 {
+    color: rgba(50, 150, 255, 0.5);
+    font-size: 40px;
+    word-spacing: 5px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-weight: lighter;
+}
+#about-appy h4 {
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+/* ABOUT ENDS */
+
+/* STYLING DOWNLOAD */
+.download {
+    background-image: url(https://colorlib.com/preview/theme/appy/images/download-bg.png);
+    height: 600px;
+    position: relative;
+}
+.download image {
+    /* margin: 40px; */
+    /* max-width: 100%; */
+    height: auto;
+    /* margin-top: 0px; */
+    padding: 60px;
+}
+#down h3 {
+    font-size: 38pxpx;
+    color: #fff;
+    font-weight: 300;
+}
+#down p {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    color: #fff;
+}
+#down {
+    text-align: center;
+    padding: 60px;
+    float: right;
+    margin-top: 150px;
+}
+.holder {
+    height: inherit;
+    position: absolute;
+    background-color: rgb(89, 116, 236, 0.75);
+    width: 100%;
+}
+#down button {
+    background-color: #fff;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+}
+.mobile2 img {
+    margin-top: 70px;
+}
+.butt-whitesq,
+.but-white {
+    border: 10px solid #fff;
+    margin: 30px;
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* STYLING VIDEOFEATURES */
+#gratApplication2 {
+    display: flex;
+    margin: 192px 96px;
+    background-image: url(https://colorlib.com/preview/theme/appy/images/video-bg.jpg);
+    background-repeat: no-repeat;
+}
+.checkVideo {
+    margin-top: 60px;
+    padding: 60px;
+    opacity: 0.7;
+    width: 500px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#videoGrat {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+#videoGrat span {
+    font-size: 15px;
+    color: gray;
+}
+#videoGrat h3 {
+    font-weight: lighter;
+    font-size: 30px;
+    font-style: oblique;
+    color: rgba(20, 30, 40, 0.5);
+}
+#videoGrat p {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(50, 150, 255, 1);
+}
+#videoGrat button {
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 16px;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+/* VIDEOGRAT STYLING ENDS */
+
+/* FEATURE STYLING */
+.Complex {
+    background-image: url(https://colorlib.com/preview/theme/appy/images/subscribe-bg.jpg);
+    background-position: bottom -120px;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-color: #5e88fc;
+    background-size: auto 94%;
+    margin-bottom: 142px;
+    height: 950px;
+    box-shadow: blueviolet;
+}
+.Leadhead {
+    text-align: center;
+    padding: 20px;
+}
+.components {
+    display: flex;
+    padding: 50px;
+    margin: 20px;
+}
+#icon {
+    font-size: 16px;
+    color: white;
+}
+.Leadhead h4 {
+    font-size: 30px;
+    font-weight: 350;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cellPhone img {
+    max-width: 200px;
+    height: 700px;
+}
+#joined {
+    display: flex;
+}
+#photed {
+    border-radius: 50% !important;
+    padding: 30px;
+    justify-content: space-around;
+}
+.fotos {
+    font-size: 20px;
+}
+/* CARD STYLING */
+.eachCard {
+    margin-top: 250px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.eachCard > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+#Cards {
+    color: palevioletred;
+}
+.eachCard:hover {
+    /* background-color: /; */
+    color: rgb(23, 52, 89);
+    box-shadow: 5px 5px 4px 2px #000;
+    cursor: pointer;
+}
+#Cards ol li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(23, 47, 71, 0.5);
+}
+#Cards p {
+    font-family: sans-serif;
+    padding: 0px 10px 10px 10px;
+    color: blue;
+}
+#Cards button {
+    border-radius: 30px;
+    padding: 20px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid blue;
+    color: blue;
+}
+#Cards button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: blue;
+    font-style: oblique;
+    font-size: 20px;
+}
+#price-rate sup {
+    font-size: 35px;
+    top: -26px;
+}
+#price-rate span {
+    font-size: 39px;
+}
+/* STYLING OURFEATURES */
+#BothHands {
+    display: flex;
+}
+.rightHand,
+.leftHand {
+    padding: 50px;
+    margin: 20px;
+}
+.OurFeatures h1 {
+    font-weight: lighter !important;
+    font-size: 30px;
+}
+.OurFeatures p {
+    font-size: 20px;
+    color: grey;
+}
+.leftHand button {
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 255);
+}
+.OurFeatures h6 {
+    text-align: center;
+}
+.OurFeatures h5,
+h6 {
+    font-size: 20px;
+    color: grey;
+}
+/* FAQ STYLING */
+.Faq h5,
+h1 {
+    text-align: center;
+}
+.question {
+    display: flex;
+    padding: 75px;
+    margin: 20px;
+    justify-content: space-between;
+}
+.Faq p {
+    font-size: 16px;
+    line-height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.panel {
+    width: 3px;
+    padding: 0 18px;
+    display: none;
+    background-color: green;
+    overflow: hidden;
+}
+.QuestionRight,
+.QuestionLeft {
+    max-width: 48%;
+}
+
+.panel1 {
+    display: flex;
+}
+/* SUBSCRIBE STYLING */
+#subscribe {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: royalblue;
+    height: 500px;
+}
+div#features {
+    margin-top: 100px;
+    background-color: #fff;
+    height: 200px;
+}
+
+form {
+    width: 600px;
+    text-align: center;
+}
+
+/* CONTACT STYLING */
+.contacted {
+    text-align: center;
+    width: 90;
+    padding: 60px;
+}
+.contacted span {
+    font-size: 16px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contacted p {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba(20, 30, 30);
+}
+.flow {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flowserial figcaption {
+    font-size: 20px;
+    font-style: unset;
+    color: rgba(0, 0, 255);
+}
+
+/* FOOTER */
+.footer {
+    border: 1px solid rgba(50, 150, 255, 0.5);
+    background: gray;
+    margin-top: 40px;
+    padding: 60px;
+}
+.foots {
+    display: flex;
+}
+.foot {
+    align-self: center;
+}
+.foot1 ul li {
+    list-style: none;
+    font-size: 16px;
+    display: inline-block;
+    margin: 30px;
 }
