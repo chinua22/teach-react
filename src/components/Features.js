@@ -11,7 +11,7 @@ import {
 
 export default function Features() {
     return (
-        <section className="Complex">
+        <section id="features-section" className="Complex">
             <div className="Leadhead">
                 <h6 id="icon"> _________ FEATURES ________</h6>
                 <h4>Powerful Features As Always</h4>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Download() {
     return (
-        <div className="download">
+        <div id="download-section" className="download">
             <div className="holder">
                 <div id="down">
                     <h3>Download The App</h3>

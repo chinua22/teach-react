@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ() {
     return (
-        <section className="Faq">
+        <section id="faq-section" className="Faq">
             <h5> _____ FAQ ______</h5>
             <h1> Frequently Asked Question </h1>
             <div className="question">

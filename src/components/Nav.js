@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function () {
     return (
         <div id="NavPane">
-            <img
-                src="https://colorlib.com/preview/theme/appy/images/logo.png"
-                alt=""
-            />
+            <Link to="secondPhase" smooth duration={2000}>
+                <img
+                    src="https://colorlib.com/preview/theme/appy/images/logo.png"
+                    alt=""
+                />
+            </Link>
 
             <div className="nav-bar">
                 <nav>
@@ -17,11 +19,15 @@ export default function () {
                         </li>
 
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link to="about-appy" smooth duration={2000}>
+                                About
+                            </Link>
                         </li>
 
                         <li>
-                            <Link to="/features">Features</Link>
+                            <Link to="features-section" smooth duration={2000}>
+                                Features
+                            </Link>
                         </li>
 
                         <li>
@@ -31,13 +37,17 @@ export default function () {
                             <Link to="/pricing">Pricing</Link>
                         </li>
                         <li>
-                            <Link to="/faq">FAQ</Link>
+                            <Link to="faq-section" smooth duration={2000}>
+                                FAQ
+                            </Link>
                         </li>
                         <li>
                             <Link to="/blog">Blog</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="Contact" smooth duration={2000}>
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </nav>

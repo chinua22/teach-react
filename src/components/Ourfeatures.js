@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Ourfeatures() {
     return (
-        <section className="OurFeatures">
+        <section id="bothhands-section" className="OurFeatures">
             <div id="BothHands">
                 <div className="leftHand">
                     <h6> OUR FEATURES </h6>

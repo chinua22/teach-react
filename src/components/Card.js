@@ -5,7 +5,7 @@ import Medium from "../images/medium-logo.png";
 
 export default function Card() {
     return (
-        <section id="Cards">
+        <section id="cards">
             <div className="eachCard">
                 <div className="card1">
                     <img src={Rocket} alt="" />
