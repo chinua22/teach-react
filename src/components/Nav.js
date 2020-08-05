@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function () {
     return (
@@ -11,30 +12,33 @@ export default function () {
             <div className="nav-bar">
                 <nav>
                     <ul>
-                        <a href="/home">
-                            <li>Home</li>
-                        </a>
-                        <a href="/about">
-                            <li>About</li>
-                        </a>
-                        <a href="/features">
-                            <li>Features</li>
-                        </a>
-                        <a href="/gallery">
-                            <li>Gallery</li>
-                        </a>
-                        <a href="/pricing">
-                            <li>Pricing</li>
-                        </a>
-                        <a href="/faq">
-                            <li>FAQ</li>
-                        </a>
-                        <a href="/blog">
-                            <li>Blog</li>
-                        </a>
-                        <a href="/contact">
-                            <li>Contact</li>
-                        </a>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/features">Features</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/gallery">Gallery</Link>
+                        </li>
+                        <li>
+                            <Link to="/pricing">Pricing</Link>
+                        </li>
+                        <li>
+                            <Link to="/faq">FAQ</Link>
+                        </li>
+                        <li>
+                            <Link to="/blog">Blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

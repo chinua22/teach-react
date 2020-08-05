@@ -16,7 +16,7 @@ export default function Start() {
                         <br />
                         fugit voluptate dolor nesciunt aperiam deserunt ut
                     </p>
-                    <button onClick="type"> DOWNLOAD APP </button>
+                    <button> DOWNLOAD APP </button>
                 </div>
 
                 <div className="mobile">
